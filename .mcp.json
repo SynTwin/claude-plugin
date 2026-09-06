@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "syntwin": {
+      "type": "http",
+      "url": "https://brazen-labrador-831.eu-west-1.convex.site/api/mcp"
+    }
+  }
+}

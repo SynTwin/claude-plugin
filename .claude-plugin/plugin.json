@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "syntwin",
+  "displayName": "SynTwin",
+  "version": "0.1.0",
+  "description": "Manage your digital twin from Claude Code and Cowork through SynTwin's hosted MCP server.",
+  "author": {
+    "name": "SynTwin GmbH",
+    "email": "info@syntwin.ai",
+    "url": "https://syntwin.ai"
+  },
+  "homepage": "https://syntwin.ai/docs/how-to/connect-external-tools/#claude-code-and-cowork",
+  "repository": "https://github.com/SynTwin/claude-plugin",
+  "license": "MIT",
+  "keywords": ["digital-twin", "knowledge", "contacts", "mcp"]
+}
