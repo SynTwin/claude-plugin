@@ -1,9 +1,9 @@
 ---
 name: check-twin-health
-description: Audit a SynTwin profile, knowledge, people, open reflection questions, and rooms for missing, stale, duplicate, or inconsistent context. Use when the user asks to check, audit, clean up, or improve twin health.
+description: Audit a syntwin profile, knowledge, people, open reflection questions, and rooms for missing, stale, duplicate, or inconsistent context. Use when the user asks to check, audit, clean up, or improve twin health.
 ---
 
-# Check SynTwin health
+# Check syntwin health
 
 Audit first. Separate verified gaps from suggestions.
 
@@ -19,7 +19,7 @@ Audit first. Separate verified gaps from suggestions.
 
 ## Process
 
-1. Read the relevant SynTwin records and summarize evidence for each finding.
+1. Read the relevant syntwin records and summarize evidence for each finding.
 2. Rank findings by likely impact. Do not call missing optional data a defect.
 3. Propose exact changes for safe, mechanical gaps. Ask before merging people, deleting anything, changing room behavior, answering reflection questions, or replacing user-authored context.
 4. Apply only approved changes, then read back affected records.

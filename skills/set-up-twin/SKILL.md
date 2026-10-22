@@ -1,15 +1,15 @@
 ---
 name: set-up-twin
-description: Build or improve the user's SynTwin from profile details, writing, files, contacts, and other relevant context available to Claude. Use when the user asks to create, initialize, populate, or improve their digital twin.
+description: Build or improve the user's syntwin from profile details, writing, files, contacts, and other relevant context available to Claude. Use when the user asks to create, initialize, populate, or improve their digital twin.
 ---
 
-# Set up a SynTwin
+# Set up a syntwin
 
 Build or improve the user's twin from relevant context already available to Claude.
 
 ## Process
 
-1. Confirm the SynTwin MCP connection works. If it needs authentication, follow `${CLAUDE_PLUGIN_ROOT}/SETUP.md`.
+1. Confirm the syntwin MCP connection works. If it needs authentication, follow `${CLAUDE_PLUGIN_ROOT}/SETUP.md`.
 2. Inspect the existing profile, settings, rules, sources, people, rooms, and open questions before proposing writes.
 3. Identify useful profile facts, durable knowledge, relationships, communication preferences, and room behavior from connected sources. Do not import secrets, credentials, transient chatter, or unrelated personal data.
 4. Show the user a concise summary of the intended changes. Resolve ambiguous identity matches before writing.

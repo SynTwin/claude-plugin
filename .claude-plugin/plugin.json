@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "syntwin",
   "displayName": "SynTwin",
-  "version": "0.1.0",
-  "description": "Manage your digital twin from Claude Code and Cowork through SynTwin's hosted MCP server.",
+  "version": "0.1.1",
+  "description": "Manage your digital twin from Claude Code and Cowork through syntwin's hosted MCP server.",
   "author": {
     "name": "SynTwin GmbH",
     "email": "info@syntwin.ai",

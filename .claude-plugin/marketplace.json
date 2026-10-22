@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "syntwin",
-  "description": "SynTwin's official Claude plugin.",
+  "description": "syntwin's official Claude plugin.",
   "owner": {
     "name": "SynTwin GmbH",
     "email": "info@syntwin.ai",
@@ -12,8 +12,8 @@
       "name": "syntwin",
       "source": "./",
       "displayName": "SynTwin",
-      "version": "0.1.0",
-      "description": "Manage your digital twin from Claude Code and Cowork through SynTwin's hosted MCP server.",
+      "version": "0.1.1",
+      "description": "Manage your digital twin from Claude Code and Cowork through syntwin's hosted MCP server.",
       "author": {
         "name": "SynTwin GmbH",
         "email": "info@syntwin.ai",

@@ -1,6 +1,6 @@
 ---
 name: prepare-contact-outreach
-description: Prepare personalized SynTwin conversation links for contacts without sending outreach. Use when the user wants contact-specific twin links for email, CRM, or another outreach workflow.
+description: Prepare personalized syntwin conversation links for contacts without sending outreach. Use when the user wants contact-specific twin links for email, CRM, or another outreach workflow.
 ---
 
 # Prepare contact outreach
