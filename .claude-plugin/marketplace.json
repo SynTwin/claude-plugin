@@ -12,7 +12,7 @@
       "name": "syntwin",
       "source": "./",
       "displayName": "SynTwin",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "description": "Manage your digital twin from Claude Code and Cowork through syntwin's hosted MCP server.",
       "author": {
         "name": "SynTwin GmbH",

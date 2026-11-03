@@ -42,7 +42,7 @@ Claude inspects existing records before writing and relies on syntwin's tool app
 
 ## Data and permissions
 
-The MCP connection can read and manage your syntwin profile, knowledge, people, rooms, and conversations. Authentication, billing, and organization administration remain in the syntwin application. See syntwin's [privacy policy](https://syntwin.ai/legal/privacy/) and [legal notice](https://syntwin.ai/legal/legal-notice/).
+The plugin connects to one remote MCP server, `https://backend.syntwin.ai/api/mcp`, and sends it only the tool calls Claude makes. The connection can read and manage your syntwin profile, knowledge, people, rooms, conversations, integrations, and workspace data. Tools that delete, overwrite, send, share, or connect something are marked so Claude asks before running them. Sign-in, plans, and payment stay in the syntwin app. See syntwin's [privacy policy](https://syntwin.ai/legal/privacy/) and [legal notice](https://syntwin.ai/legal/legal-notice/).
 
 ## Updates and source
 
