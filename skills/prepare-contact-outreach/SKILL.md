@@ -1,19 +1,19 @@
 ---
 name: prepare-contact-outreach
-description: Prepare personalized syntwin conversation links for contacts without sending outreach. Use when the user wants contact-specific twin links for email, CRM, or another outreach workflow.
+description: Prepares personalized syntwin room links, share context, and draft messages for contacts without sending anything. Use when the user wants contact-specific twin links for email, a CRM, a campaign, or another outreach workflow.
 ---
 
 # Prepare contact outreach
 
-Create a concise contact-to-link mapping. Never send the outreach.
+Produce a contact-to-link mapping and, if asked, drafts. Never send outreach.
 
 ## Process
 
-1. List existing rooms and resolve the target room. Ask the user when more than one room plausibly fits.
-2. Normalize the supplied contacts. Email is the stable identity. Keep only context relevant to each future conversation.
-3. Search existing people before writing. Use the batch upsert operation for multiple contacts and do not create duplicate records.
-4. Show the room, contacts, and proposed person changes before writing.
-5. Fetch personalized links in one batch once person ids are known.
-6. Return a compact mapping containing contact, room, and link. Report skipped or failed contacts separately.
+1. Resolve the room with `list_deployments`. Ask when more than one room plausibly fits.
+2. Normalize the contacts. Email is the stable identity. Keep only context relevant to each future conversation.
+3. Search `list_people` before writing. Show the room, contacts, and proposed person changes, then use `batch_upsert_people` for several contacts. Never create a duplicate.
+4. Get links: `get_or_create_person_link` per contact, or `batch_get_personalized_links` once person ids are known. Passing `context` to `get_or_create_person_link` replaces that person's saved share context, so read `get_person_share_context` first and confirm before replacing it.
+5. For drafts, call `draft_person_share_message` and put the person's link where it says `{{link}}`. Present drafts for the user to edit and send themselves.
+6. Return a compact table of contact, room, and link. List skipped or failed contacts separately.
 
-Preparing records and links is the end of this workflow. Do not email, message, publish, or otherwise contact anyone.
+The workflow ends at records, links, and drafts. Do not email, message, post, or otherwise contact anyone, even through another connected tool, unless the user explicitly approves that exact message and recipient.

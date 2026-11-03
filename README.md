@@ -1,6 +1,6 @@
 # syntwin plugin for Claude Code and Cowork
 
-Manage your [syntwin](https://syntwin.ai) digital twin from Claude Code and Cowork. The plugin connects Claude to syntwin's hosted MCP server and adds focused workflows for setup, conversation handoff, contact outreach, and health checks.
+Manage your [syntwin](https://syntwin.ai) digital twin from Claude Code and Cowork. The plugin connects Claude to syntwin's hosted MCP server and adds skills for setup, hand-offs from the syntwin app, your 1:1 with your twin, conversation review, knowledge, outreach links, Grow, automations, connected tools, and health checks.
 
 The plugin contains no local server, executable, hook, or credential. MCP access uses syntwin OAuth and stays within the workspace selected during sign-in.
 
@@ -31,24 +31,32 @@ See [SETUP.md](SETUP.md) for sign-in and workspace selection.
 
 Claude can select these skills automatically, or you can invoke them directly:
 
-| Skill                               | Purpose                                                 | May write to syntwin |
-| ----------------------------------- | ------------------------------------------------------- | -------------------- |
-| `/syntwin:set-up-twin`              | Build or improve your twin from available context       | Yes                  |
-| `/syntwin:remember-conversation`    | Save durable conversation context                       | Yes                  |
-| `/syntwin:prepare-contact-outreach` | Create personalized twin links without sending messages | Yes                  |
-| `/syntwin:check-twin-health`        | Find stale or missing twin context                      | Only with approval   |
+| Skill                               | Use it to                                                                        | May write to syntwin                      |
+| ----------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
+| `/syntwin:set-up-twin`              | Build or improve your twin from context the assistant can reach                  | Yes, after you review                     |
+| `/syntwin:open-handoff`             | Open a person or conversation you handed over from the syntwin app               | Only what you ask for                     |
+| `/syntwin:talk-to-twin`             | Talk to your twin in your 1:1                                                    | Only what you confirm                     |
+| `/syntwin:review-conversations`     | Summarize visitor conversations, close knowledge gaps, give feedback, try a room | Yes, after you approve                    |
+| `/syntwin:remember-conversation`    | Save facts and decisions from a conversation or meeting                          | Yes, after you review                     |
+| `/syntwin:prepare-contact-outreach` | Create personal room links and drafts without sending them                       | Yes                                       |
+| `/syntwin:find-lookalike-prospects` | Find similar companies and people with Grow                                      | Yes, and spends credits after you confirm |
+| `/syntwin:set-up-automation`        | Send finished conversations to your own webhook                                  | Yes, after you review                     |
+| `/syntwin:manage-connected-tools`   | Check HubSpot, Google Drive, DocuWare, and room MCP tools                        | Only with approval                        |
+| `/syntwin:check-twin-health`        | Find stale, missing, or duplicate context                                        | Only with approval                        |
 
-Claude inspects existing records before writing and relies on syntwin's tool approval annotations for consequential changes.
+Claude resolves existing records before writing and never sends messages or outreach unless you approve the exact message. syntwin's tool annotations mark consequential changes for approval.
+
+The same skills ship in syntwin's plugin for ChatGPT and Codex.
 
 ## Data and permissions
 
-The plugin connects to one remote MCP server, `https://backend.syntwin.ai/api/mcp`, and sends it only the tool calls Claude makes. The connection can read and manage your syntwin profile, knowledge, people, rooms, conversations, integrations, and workspace data. Tools that delete, overwrite, send, share, or connect something are marked so Claude asks before running them. Sign-in, plans, and payment stay in the syntwin app. See syntwin's [privacy policy](https://syntwin.ai/legal/privacy/) and [legal notice](https://syntwin.ai/legal/legal-notice/).
+The plugin connects to one remote MCP server, `https://backend.syntwin.ai/api/mcp`, and sends it only the tool calls Claude makes. The connection can read and manage your syntwin profile, knowledge, people, rooms, conversations, automations, integrations, and workspace data. Tools that delete, overwrite, send, share, or connect something are marked so Claude asks before running them. Sign-in, plans, and payment stay in the syntwin app. See syntwin's [privacy policy](https://syntwin.ai/legal/privacy/), [terms](https://syntwin.ai/legal/terms/), and [legal notice](https://syntwin.ai/legal/legal-notice/).
 
 ## Updates and source
 
 This public repository is a generated mirror. The canonical plugin package lives with the syntwin application and is published through a one-way workflow. Do not edit the mirror directly; the next release restores the canonical files while retaining the mirror's commit history.
 
-Maintainers bump the version in both plugin manifests for every package change so installed copies receive the update.
+The skills in this repository are the single copy of syntwin's assistant skills; the ChatGPT and Codex plugin is built from them. Maintainers bump the version in both plugin manifests for every package change so installed copies receive the update.
 
 ## Support
 
