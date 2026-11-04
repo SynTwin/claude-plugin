@@ -9,17 +9,17 @@ Audit first. Separate verified problems from suggestions.
 
 ## Checks
 
-| Area                 | Tools                                               | Look for                                                                 |
-| -------------------- | --------------------------------------------------- | ------------------------------------------------------------------------ |
-| Coverage             | `get_twin_coverage`                                 | Weak facets and which source would help most                             |
-| Knowledge gaps       | `list_open_knowledge_gaps`                          | Questions visitors asked that the twin could not answer                  |
-| Reflection questions | `list_open_questions`                               | Questions the twin still has for the owner                               |
-| People               | `list_duplicate_people`                             | People sharing an email                                                  |
-| Profile and rules    | `get_profile`, `get_settings`, `list_rules`         | Missing, conflicting, or duplicated instructions                         |
-| Sources              | `list_sources`                                      | Missing titles, dates, person links, or room access                      |
-| Rooms                | `list_deployments`, `list_deployment_source_access` | Unclear instructions or sources no room can use                          |
-| Connected tools      | `list_integrations`, `list_mcp_servers`             | Reconnect needed, failed syncs, changed MCP tools waiting for acceptance |
-| Conversations        | `list_sessions`                                     | Unread conversations and repeated unanswered questions                   |
+| Area                     | Tools                                                  | Look for                                                                 |
+| ------------------------ | ------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Coverage                 | `get_twin_coverage`                                    | Weak facets and which source would help most                             |
+| Knowledge gaps           | `list_open_knowledge_gaps`                             | Questions visitors asked that the twin could not answer                  |
+| Reflection questions     | `list_open_questions`                                  | Questions the twin still has for the owner                               |
+| People                   | `list_duplicate_people`                                | People sharing an email                                                  |
+| Profile and instructions | `get_profile`, `get_settings`, `get_twin_instructions` | Missing, conflicting, or duplicated instructions                         |
+| Sources                  | `list_sources`                                         | Missing titles, dates, person links, or room access                      |
+| Rooms                    | `list_deployments`, `list_deployment_source_access`    | Unclear instructions or sources no room can use                          |
+| Connected tools          | `list_integrations`, `list_mcp_servers`                | Reconnect needed, failed syncs, changed MCP tools waiting for acceptance |
+| Conversations            | `list_sessions`                                        | Unread conversations and repeated unanswered questions                   |
 
 ## Process
 

@@ -31,18 +31,18 @@ See [SETUP.md](SETUP.md) for sign-in and workspace selection.
 
 Claude can select these skills automatically, or you can invoke them directly:
 
-| Skill                               | Use it to                                                                        | May write to syntwin                      |
-| ----------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| `/syntwin:set-up-twin`              | Build or improve your twin from context the assistant can reach                  | Yes, after you review                     |
-| `/syntwin:open-handoff`             | Open a person or conversation you handed over from the syntwin app               | Only what you ask for                     |
-| `/syntwin:talk-to-twin`             | Talk to your twin in your 1:1                                                    | Only what you confirm                     |
-| `/syntwin:review-conversations`     | Summarize visitor conversations, close knowledge gaps, give feedback, try a room | Yes, after you approve                    |
-| `/syntwin:remember-conversation`    | Save facts and decisions from a conversation or meeting                          | Yes, after you review                     |
-| `/syntwin:prepare-contact-outreach` | Create personal room links and drafts without sending them                       | Yes                                       |
-| `/syntwin:find-lookalike-prospects` | Find similar companies and people with Grow                                      | Yes, and spends credits after you confirm |
-| `/syntwin:set-up-automation`        | Send finished conversations to your own webhook                                  | Yes, after you review                     |
-| `/syntwin:manage-connected-tools`   | Check HubSpot, Google Drive, DocuWare, and room MCP tools                        | Only with approval                        |
-| `/syntwin:check-twin-health`        | Find stale, missing, or duplicate context                                        | Only with approval                        |
+| Skill                               | Use it to                                                                        | May write to syntwin                                     |
+| ----------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `/syntwin:set-up-twin`              | Build or improve your twin from context the assistant can reach                  | Yes, after you review                                    |
+| `/syntwin:open-handoff`             | Open a person or conversation you handed over from the syntwin app               | Only what you ask for                                    |
+| `/syntwin:talk-to-twin`             | Talk to your twin in your 1:1                                                    | Only what you confirm                                    |
+| `/syntwin:review-conversations`     | Summarize visitor conversations, close knowledge gaps, give feedback, try a room | Yes, after you approve                                   |
+| `/syntwin:remember-conversation`    | Save facts and decisions from a conversation or meeting                          | Yes, after you review                                    |
+| `/syntwin:prepare-contact-outreach` | Create personal room links and drafts without sending them                       | Yes                                                      |
+| `/syntwin:find-lookalike-prospects` | Find similar companies and people with Grow                                      | Yes, and runs on your provider account after you confirm |
+| `/syntwin:set-up-automation`        | Send finished conversations to your own webhook                                  | Yes, after you review                                    |
+| `/syntwin:manage-connected-tools`   | Check HubSpot, Google Drive, DocuWare, and room MCP tools                        | Only with approval                                       |
+| `/syntwin:check-twin-health`        | Find stale, missing, or duplicate context                                        | Only with approval                                       |
 
 Claude resolves existing records before writing and never sends messages or outreach unless you approve the exact message. syntwin's tool annotations mark consequential changes for approval.
 

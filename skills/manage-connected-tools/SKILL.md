@@ -10,7 +10,7 @@ description: Checks and manages what syntwin reads from HubSpot, Google Drive, a
 1. Read `list_integrations` for connection status, last sync, and what each mirrors.
 2. Connecting HubSpot or Google Drive, and creating API keys, happen in the syntwin app. Send the owner there; never ask for passwords or keys in chat. `connect_docuware` takes credentials, so only use it when the owner enters them for that purpose.
 3. To change what a room or person may use, read `get_integration_scope_rules` first. Browse Drive or DocuWare with `list_integration_items` (and `batch_get_drive_folder_paths` for folder locations). Show the change, then `set_integration_scope_rules`, which replaces the rules and syncs.
-4. `refresh_integration` checks a connection; `sync_integration` mirrors now. If a connection needs reconnecting, send the owner to the app.
+4. `refresh_integration` checks a connection; `sync_integration` mirrors now. If a connection needs reconnecting, send the owner to the app. `otherAccount: true` means the owner signed in to a different account than the one connected: they reconnect with the connected account, or add the other one in the app (HubSpot, Google Drive). Gmail takes one mailbox, so they disconnect it in the app before connecting another.
 5. `disconnect_integration` removes the integration's rules, links, and mirrored sources from syntwin. Use it only on explicit request.
 
 ## MCP servers for rooms
