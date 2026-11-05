@@ -27,6 +27,12 @@ Open Customize, then Plugins. Add `https://github.com/SynTwin/claude-plugin` as 
 
 See [SETUP.md](SETUP.md) for sign-in and workspace selection.
 
+## Start with your agent
+
+Run `/syntwin:set-up-twin`, or ask: "Help me set up syntwin with you as my agent. Verify the connection, review what my twin should know, and agree how we hand over work and keep it up to date."
+
+The skill checks the workspace before writing, proposes knowledge and room changes, and reads saved changes back. New portrait and voice uploads currently happen in the app. The agent can check existing media and select it once ready. See [SETUP.md](SETUP.md#set-up-with-your-agent) for the full prompt and the routine for future updates.
+
 ## Workflows
 
 Claude can select these skills automatically, or you can invoke them directly:
