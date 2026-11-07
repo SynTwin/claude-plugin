@@ -4,7 +4,7 @@ The plugin connects to syntwin's hosted MCP server using OAuth. It ships no cred
 
 ## Before you start
 
-- Create or join a workspace at [my.syntwin.ai](https://my.syntwin.ai).
+- Create or join a workspace at [syntwin.ai](https://syntwin.ai).
 - Install the plugin as described in [README.md](README.md#install).
 
 ## Claude Code
