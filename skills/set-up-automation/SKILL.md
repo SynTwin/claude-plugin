@@ -9,9 +9,9 @@ An automation POSTs to a public HTTPS URL whenever an owner event happens. Today
 
 ## Process
 
-1. Read `list_automations`. Update an existing automation for the same endpoint instead of creating a second one.
-2. Collect the endpoint URL, any headers the endpoint needs, and an optional JSON body template. The owner pastes header secrets themselves; never print, guess, or repeat a secret value.
-3. Show the event, URL, header names, and body template, then call `create_automation` or `update_automation`. An update replaces the whole automation; send a secret header without a value to keep its stored value.
+1. Read `list_automations`. If one already serves the same endpoint, changing it happens in the syntwin app's Automations page; send the owner there instead of creating a second one.
+2. Collect the endpoint URL and an optional JSON body template. Never ask for secrets: an endpoint that needs headers, such as an API key, gets them from the owner in the app after you create the automation.
+3. Show the event, URL, and body template, then call `create_automation`. Headers, and every change to an existing automation, happen in the app.
 4. Offer `test_automation`. It sends one sample event to the endpoint now, and the sample may be the owner's latest real visitor conversation, so say that and ask first. Report how the endpoint answered.
 5. Delete with `delete_automation` only on explicit request.
 

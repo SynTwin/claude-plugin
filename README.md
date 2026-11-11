@@ -1,6 +1,6 @@
 # syntwin plugin for Claude Code and Cowork
 
-Manage your [syntwin](https://syntwin.ai) digital twin from Claude Code and Cowork. The plugin connects Claude to syntwin's hosted MCP server and adds skills for setup, hand-offs from the syntwin app, your 1:1 with your twin, conversation review, knowledge, outreach links, Grow, automations, connected tools, and health checks.
+Manage your [syntwin](https://syntwin.ai) digital twin from Claude Code and Cowork. The plugin connects Claude to syntwin's hosted MCP server and adds skills for setup, your 1:1 with your twin, conversation review, knowledge, outreach links, Grow, automations, connected tools, and health checks.
 
 The plugin contains no local server, executable, hook, or credential. MCP access uses syntwin OAuth and stays within the workspace selected during sign-in.
 
@@ -40,7 +40,6 @@ Claude can select these skills automatically, or you can invoke them directly:
 | Skill                               | Use it to                                                                        | May write to syntwin                                     |
 | ----------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | `/syntwin:set-up-twin`              | Build or improve your twin from context the assistant can reach                  | Yes, after you review                                    |
-| `/syntwin:open-handoff`             | Open a person or conversation you handed over from the syntwin app               | Only what you ask for                                    |
 | `/syntwin:talk-to-twin`             | Talk to your twin in your 1:1                                                    | Only what you confirm                                    |
 | `/syntwin:review-conversations`     | Summarize visitor conversations, close knowledge gaps, give feedback, try a room | Yes, after you approve                                   |
 | `/syntwin:remember-conversation`    | Save facts and decisions from a conversation or meeting                          | Yes, after you review                                    |

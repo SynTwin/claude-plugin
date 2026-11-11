@@ -5,6 +5,8 @@ description: Reviews conversations visitors had with the owner's syntwin rooms, 
 
 # Review conversations
 
+Tell the owner what happened in plain words: who talked with their twin, what they wanted, and what needs them. Say "places where your twin talks for you" for rooms and "what your twin knows" for sources, and leave out tool names and the workspace unless they ask.
+
 ## Work through the inbox
 
 1. Find conversations with `list_sessions` (filter by room with `deploymentId` or by person with `personId`). Read each one with `get_session_transcript`.

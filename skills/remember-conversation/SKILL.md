@@ -5,7 +5,7 @@ description: Saves useful facts, decisions, commitments, and relationship contex
 
 # Remember a conversation
 
-Store only context that improves a future conversation.
+Store only context that improves a future conversation, and only when the owner asks you to. Save the conversation, notes or details the owner shares or names in their request; never copy chat history, memory or other conversations into syntwin on your own.
 
 ## Process
 

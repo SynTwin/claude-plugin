@@ -37,7 +37,7 @@ If a credential was revoked in syntwin, create a new connection. A revoked crede
 
 Run `/syntwin:set-up-twin` in Claude Code, or send this prompt in Claude, ChatGPT, Codex, or another connected agent:
 
-> Help me set up and maintain my syntwin with you as my agent. First verify which workspace and owner you are connected to. Inspect my existing twin, knowledge, people, and rooms. Use the context I choose to share, propose what to teach my twin and how its room should behave, and let me review changes before saving. Help me set up its talking head and cloned voice, telling me which steps need me in the syntwin app. Agree how we hand conversations between you and my twin and keep its knowledge current after meetings, decisions, and visitor questions. Read back what you save and tell me what still needs my attention. Do not start background monitoring or recurring work without my request.
+> Set up my syntwin with me, as its set-up-twin skill describes: read it with get_skill first and follow it. Suggest answers from what you already know about me, and let me confirm them.
 
 The setup skill checks existing records, separates facts from behavioral instructions, and reviews who may use each source. It also helps your agent work through a person or conversation handed over from the app and save the updates you approve afterward.
 
